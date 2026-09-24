@@ -1,0 +1,11 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Full-bleed rotating hero carousel. Each slide fills the viewport width with a background image; an overlaid content box (light background) sits at the lower-left with a heading, short description, and a single CTA button. Slide indicator dots are centered below the slides and prev/next circular navigation buttons overlay the lower-right of the slide area.",
+  "contentPattern": "Rotating slides, each carrying a full-width image plus title, description, and one CTA link.",
+  "usage": "Landing/home page hero region presenting 2 or more promotional slides that rotate or can be swiped/navigated.",
+  "canonicalModelStructure": "collection",
+  "options": [],
+  "memberVariantIds": ["carousel-hero"]
+}

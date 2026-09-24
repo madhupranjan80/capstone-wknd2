@@ -143,6 +143,41 @@ function decorateButtons(main) {
 }
 
 /**
+ * Applies section metadata as classes/styles on the parent section.
+ * The vendored aem.js decorateSections() does not consume `.section-metadata`
+ * blocks, so this reads each one's key/value rows and, for the `style` key,
+ * adds the value(s) as CSS class tokens on the owning section, then removes
+ * the block. Mirrors the standard EDS behavior.
+ * @param {Element} main The main container element
+ */
+function decorateSectionMetadata(main) {
+  main.querySelectorAll('.section .section-metadata').forEach((meta) => {
+    const section = meta.closest('.section');
+    if (!section) return;
+    [...meta.children].forEach((row) => {
+      const cells = [...row.children];
+      if (cells.length < 2) return;
+      const key = cells[0].textContent.trim().toLowerCase();
+      const value = cells[1].textContent.trim();
+      if (key === 'style') {
+        value.split(',').forEach((s) => {
+          const token = s.trim().replace(/\s+/g, '-').toLowerCase();
+          if (token) section.classList.add(token);
+        });
+      } else {
+        section.dataset[key] = value;
+      }
+    });
+    // remove the metadata block and its now-empty wrapper (if any)
+    const wrapper = meta.parentElement;
+    meta.remove();
+    if (wrapper && !wrapper.classList.contains('section') && wrapper.children.length === 0) {
+      wrapper.remove();
+    }
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -151,6 +186,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionMetadata(main);
   decorateBlocks(main);
   decorateButtons(main);
 }

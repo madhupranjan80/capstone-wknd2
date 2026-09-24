@@ -1,0 +1,43 @@
+/* table-factsheet — adventure fact sheet: label/value pairs,
+   uppercase muted labels, bold values, a divider between each pair. */
+
+.table-factsheet table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-factsheet table tbody tr {
+  border-bottom: 1px solid #dadada;
+}
+
+.table-factsheet table tbody tr:first-child {
+  border-top: 1px solid #dadada;
+}
+
+.table-factsheet table td {
+  padding: 14px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-factsheet table td p {
+  margin: 0;
+}
+
+.table-factsheet .table-factsheet-label {
+  width: 45%;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xs);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted-color);
+}
+
+.table-factsheet .table-factsheet-value {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  font-weight: 700;
+  color: var(--text-color);
+}

@@ -1,0 +1,295 @@
+{
+  "templates": [
+    {
+      "name": "about-us",
+      "urls": [
+        "https://wknd.site/us/en/about-us.html",
+        "https://wknd.site/us/en/magazine.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en/about-us.html",
+      "description": "WKND about-us / magazine landing: editorial default content plus (on the magazine landing) a featured-article promo and an article-card grid.",
+      "blocks": [
+        {
+          "name": "cards-image",
+          "instances": [
+            ".image-list.list",
+            ".cmp-image-list"
+          ]
+        },
+        {
+          "name": "columns-featured",
+          "instances": [
+            ".teaser.cmp-teaser--featured",
+            ".cmp-teaser--featured"
+          ]
+        }
+      ],
+      "urlPattern": "/us/en/*",
+      "sections": []
+    },
+    {
+      "name": "adventures",
+      "urls": [
+        "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+        "https://wknd.site/us/en/adventures/beervana-portland.html",
+        "https://wknd.site/us/en/adventures/climbing-new-zealand.html",
+        "https://wknd.site/us/en/adventures/colorado-rock-climbing.html",
+        "https://wknd.site/us/en/adventures/cycling-southern-utah.html",
+        "https://wknd.site/us/en/adventures/cycling-tuscany.html",
+        "https://wknd.site/us/en/adventures/downhill-skiing-wyoming.html",
+        "https://wknd.site/us/en/adventures/gastronomic-marais-tour.html",
+        "https://wknd.site/us/en/adventures/napa-wine-tasting.html",
+        "https://wknd.site/us/en/adventures/riverside-camping-australia.html",
+        "https://wknd.site/us/en/adventures/ski-touring-mont-blanc.html",
+        "https://wknd.site/us/en/adventures/surf-camp-costa-rica.html",
+        "https://wknd.site/us/en/adventures/tahoe-skiing.html",
+        "https://wknd.site/us/en/adventures/west-coast-cycling.html",
+        "https://wknd.site/us/en/adventures/whistler-mountain-biking.html",
+        "https://wknd.site/us/en/adventures/yosemite-backpacking.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en/adventures/bali-surf-camp.html",
+      "description": "WKND adventure detail page: breadcrumb, full-width hero image carousel, adventure fact sheet, and tabbed Overview/Itinerary/What-to-Bring content.",
+      "blocks": [
+        {
+          "name": "carousel-adventure",
+          "instances": [
+            ".carousel.cmp-carousel--mini",
+            ".cmp-carousel--mini"
+          ]
+        },
+        {
+          "name": "table-factsheet",
+          "instances": [
+            ".contentfragment.cmp-contentfragment--elements",
+            ".cmp-contentfragment--elements"
+          ]
+        },
+        {
+          "name": "tabs-adventure",
+          "instances": [
+            ".tabs.panelcontainer",
+            ".cmp-tabs"
+          ]
+        }
+      ],
+      "urlPattern": "/us/en/adventures/*",
+      "sections": [
+        {
+          "id": "a1",
+          "name": "Breadcrumb",
+          "selector": [
+            ".breadcrumb.cmp-breadcrumb--fixed",
+            ".cmp-breadcrumb"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".cmp-breadcrumb"
+          ]
+        },
+        {
+          "id": "a2",
+          "name": "Hero Image Carousel",
+          "selector": [
+            ".carousel.cmp-carousel--mini"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-adventure"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "a3",
+          "name": "Adventure Title + Fact Sheet + Share",
+          "selector": [
+            ".contentfragment.cmp-contentfragment--elements",
+            ".cmp-contentfragment--elements"
+          ],
+          "style": null,
+          "blocks": [
+            "table-factsheet"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "a4",
+          "name": "Tabbed Content",
+          "selector": [
+            ".tabs.panelcontainer",
+            ".cmp-tabs"
+          ],
+          "style": null,
+          "blocks": [
+            "tabs-adventure"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "adventures-2",
+      "urls": [
+        "https://wknd.site/us/en/adventures.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en/adventures.html",
+      "description": "WKND adventures listing page: page title, full-bleed hero teaser, and a category tab strip containing a grid of adventure cards.",
+      "blocks": [
+        {
+          "name": "hero-teaser",
+          "instances": [
+            ".teaser.cmp-teaser--hero",
+            ".cmp-teaser--hero"
+          ]
+        },
+        {
+          "name": "tabs-adventure",
+          "instances": [
+            ".tabs.panelcontainer",
+            ".cmp-tabs"
+          ]
+        }
+      ],
+      "urlPattern": "/us/en/*",
+      "sections": []
+    },
+    {
+      "name": "faqs",
+      "urls": [
+        "https://wknd.site/us/en/faqs.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en/faqs.html",
+      "description": "WKND FAQs page: title, hero image, intro paragraph (default content), and a 7-item expand/collapse Q&A accordion.",
+      "blocks": [
+        {
+          "name": "accordion-faq",
+          "instances": [
+            ".accordion.panelcontainer",
+            ".cmp-accordion"
+          ]
+        }
+      ],
+      "urlPattern": "/us/en/*",
+      "sections": []
+    },
+    {
+      "name": "home",
+      "urls": [
+        "https://wknd.site/us/en.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en.html",
+      "description": "WKND home/landing page: hero carousel, featured article, recent articles grid, full-width adventure teaser, and destinations grid.",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".carousel.cmp-carousel--hero",
+            ".cmp-carousel--hero"
+          ]
+        },
+        {
+          "name": "columns-featured",
+          "instances": [
+            ".teaser.cmp-teaser--featured",
+            ".cmp-teaser--featured"
+          ]
+        },
+        {
+          "name": "cards-image",
+          "instances": [
+            ".image-list.list",
+            ".cmp-image-list"
+          ]
+        },
+        {
+          "name": "hero-teaser",
+          "instances": [
+            ".teaser.cmp-teaser--imagebottom",
+            ".cmp-teaser--imagebottom"
+          ]
+        }
+      ],
+      "urlPattern": "/us/*",
+      "sections": [
+        {
+          "id": "s1",
+          "name": "Hero Carousel",
+          "selector": [
+            ".carousel.cmp-carousel--hero"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "Featured Article",
+          "selector": [
+            ".teaser.cmp-teaser--featured"
+          ],
+          "style": "grey",
+          "blocks": [
+            "columns-featured"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s3",
+          "name": "Recent Articles",
+          "selector": [
+            ".title.cmp-title--underline"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-image"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s4",
+          "name": "Next Adventures / Climbing New Zealand",
+          "selector": [
+            ".teaser.cmp-teaser--imagebottom"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-teaser"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s5",
+          "name": "Where do you want to go?",
+          "selector": [
+            ".title.aem-GridColumn"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-image"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "magazine",
+      "urls": [
+        "https://wknd.site/us/en/magazine/arctic-surfing.html",
+        "https://wknd.site/us/en/magazine/guide-la-skateparks.html",
+        "https://wknd.site/us/en/magazine/san-diego-surf.html",
+        "https://wknd.site/us/en/magazine/ski-touring.html",
+        "https://wknd.site/us/en/magazine/western-australia.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en/magazine/arctic-surfing.html",
+      "description": "WKND magazine article: editorial long-form content (hero image, title, author byline, body copy, sub-headings, pull-quote, inline photos) — all default content, no blocks.",
+      "blocks": [],
+      "urlPattern": "/us/en/magazine/*",
+      "sections": []
+    }
+  ],
+  "metadata": {
+    "projectType": "doc"
+  }
+}

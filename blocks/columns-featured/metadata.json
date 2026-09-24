@@ -1,0 +1,18 @@
+{
+  "variantName": "columns-featured",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Two-column featured promo laid out inside a solid grey background panel. Image occupies the left column; the right column stacks an eyebrow label ('Featured Article'), a large heading, a descriptive paragraph, and a single CTA button. Stacks to a single column on narrow viewports (image first).",
+  "contentPattern": "One row, two cells: cell 1 is the image, cell 2 is eyebrow + heading + description + CTA link.",
+  "usage": {
+    "pagesUsing": [
+      "/us/en/about-us"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-23T20:03:53.280Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "columns-featured"
+  ]
+}

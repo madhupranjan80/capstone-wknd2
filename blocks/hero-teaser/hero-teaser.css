@@ -1,0 +1,82 @@
+/* hero-teaser — WKND "imagebottom" teaser (Climbing New Zealand)
+ * Full-bleed image on top; a white content panel pulled up to overlap the
+ * image's lower edge. Values extracted from wknd.site .cmp-teaser--imagebottom.
+ * See migration-work/hero-teaser-extracted.css
+ */
+
+/* Break out of the section's max-width so the banner spans full viewport width */
+.hero-teaser-container .hero-teaser-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-teaser {
+  position: relative;
+  display: block;
+  color: var(--text-color);
+}
+
+/* --- Image (first row) --- */
+.hero-teaser .hero-teaser-image {
+  line-height: 0;
+}
+
+.hero-teaser .hero-teaser-image picture,
+.hero-teaser .hero-teaser-image img {
+  display: block;
+  width: 100%;
+}
+
+.hero-teaser .hero-teaser-image img {
+  height: 320px;
+  object-fit: cover;
+}
+
+/* --- White content panel (second row), pulled up over the image --- */
+.hero-teaser .hero-teaser-content {
+  position: relative;
+  z-index: 1;
+  margin-top: -48px;
+  background-color: var(--background-color);
+  padding: 0 24px;
+  text-align: left;
+}
+
+/* No image: the panel sits inline, no negative overlap */
+.hero-teaser.no-image .hero-teaser-content {
+  margin-top: 0;
+}
+
+.hero-teaser .hero-teaser-content h2 {
+  margin: 18px 0 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.hero-teaser .hero-teaser-content p {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: 1.75;
+  color: var(--text-color);
+}
+
+/* CTA "See Trip" — EDS decorates the standalone link into a.button;
+   the global a.button rules already match the source exactly. */
+.hero-teaser .hero-teaser-content .button-container {
+  margin: 18px 0;
+}
+
+@media (width >= 900px) {
+  .hero-teaser .hero-teaser-image img {
+    height: 640px;
+  }
+
+  .hero-teaser .hero-teaser-content {
+    margin-top: -180px;
+    padding: 0 28px;
+  }
+}

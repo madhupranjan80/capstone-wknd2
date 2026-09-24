@@ -1,0 +1,19 @@
+{
+  "variantName": "tabs-adventure",
+  "baseBlock": "tabs",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Horizontal tab strip with bold labels above a bordered content panel; the selected tab merges into the panel below it. Panels hold rich content (paragraphs, sub-headings, images, bulleted lists). Only the active panel is visible.",
+  "contentPattern": "Repeating rows, each a tab: cell 1 is the tab label (e.g. 'Overview'), cell 2 is the panel content.",
+  "usage": "Adventure detail body split into switchable panels such as Overview, Itinerary, and What to Bring.",
+  "options": [],
+  "memberVariantIds": [
+    "tabs-adventure"
+  ],
+  "usageTracking": {
+    "pagesUsing": [
+      "/us/en/adventures"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-23T20:13:28.950Z"
+  }
+}

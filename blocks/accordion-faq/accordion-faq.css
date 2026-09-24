@@ -1,0 +1,57 @@
+/* accordion-faq — Q&A expand/collapse list.
+   Bold uppercase question with a plus/minus (chevron) toggle; answer revealed on open. */
+
+.accordion-faq .accordion-faq-item {
+  border-bottom: 1px solid #dadada;
+}
+
+.accordion-faq .accordion-faq-item:first-child {
+  border-top: 1px solid #dadada;
+}
+
+.accordion-faq .accordion-faq-item-label {
+  position: relative;
+  padding: 18px 46px 18px 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--body-font-family);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.accordion-faq .accordion-faq-item-label::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-faq .accordion-faq-item-label:focus,
+.accordion-faq .accordion-faq-item-label:hover {
+  color: var(--link-color);
+}
+
+.accordion-faq .accordion-faq-item-label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentcolor;
+  border-width: 2px 2px 0 0;
+  transform: translateY(-50%) rotate(135deg);
+  transition: transform 0.2s;
+}
+
+.accordion-faq .accordion-faq-item[open] .accordion-faq-item-label::after {
+  transform: translateY(-60%) rotate(-45deg);
+}
+
+.accordion-faq .accordion-faq-item-body {
+  padding: 0 0 18px;
+  color: var(--text-color);
+}
+
+.accordion-faq .accordion-faq-item-body p {
+  margin: 0 0 0.8em;
+}

@@ -1,0 +1,19 @@
+{
+  "variantName": "cards-image",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Borderless responsive grid of article cards, typically four across on desktop. Each card stacks a 4:3 image on top, a bold uppercase title, and a short grey description beneath. Cards can be clickable to their target.",
+  "contentPattern": "Repeating rows, each a card: cell 1 is the image, cell 2 is the title (heading) plus a short description and an optional CTA.",
+  "usage": {
+    "pagesUsing": [
+      "/us/en/about-us",
+      "/us/en/adventures"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-09-23T20:13:28.969Z"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "cards-image"
+  ]
+}

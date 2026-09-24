@@ -1,0 +1,19 @@
+{
+  "variantName": "hero-teaser",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": "Full-bleed banner teaser. A large full-width background image spans the section; a solid content box overlays the lower-left containing a heading, a descriptive paragraph, and a single CTA button. On narrow viewports the content box stacks at the bottom of the image.",
+  "contentPattern": "Single-column rows: a background-image row plus a text row carrying title, description, and a CTA link.",
+  "usage": "Prominent full-width promotional banner for a single featured trip/adventure, e.g. 'Next Adventures'.",
+  "options": [],
+  "memberVariantIds": [
+    "hero-teaser"
+  ],
+  "usageTracking": {
+    "pagesUsing": [
+      "/us/en/adventures"
+    ],
+    "reuseCount": 1,
+    "lastUsed": "2026-09-23T20:13:28.929Z"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variantName": "accordion-faq",
+  "baseBlock": "accordion",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Vertical list of expand/collapse Q&A rows separated by thin dividers. Each row shows a bold uppercase question with a chevron toggle on the right; clicking reveals the answer below. Only opened rows show their answer.",
+  "contentPattern": "Repeating rows, each a Q&A pair: cell 1 is the question, cell 2 is the answer.",
+  "usage": "FAQ page expand/collapse question-and-answer list.",
+  "options": [],
+  "memberVariantIds": ["accordion-faq"]
+}

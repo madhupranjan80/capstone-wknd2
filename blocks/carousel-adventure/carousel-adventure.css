@@ -1,0 +1,142 @@
+/* carousel-adventure — full-bleed image-only detail-page gallery.
+   Slides carry only an image (no overlaid heading/description/CTA). */
+
+.carousel-adventure-wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-adventure .carousel-adventure-slides-container {
+  position: relative;
+}
+
+.carousel-adventure .carousel-adventure-slides,
+.carousel-adventure .carousel-adventure-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-adventure .carousel-adventure-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: scroll clip;
+}
+
+.carousel-adventure .carousel-adventure-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-adventure .carousel-adventure-slide {
+  position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+.carousel-adventure .carousel-adventure-slide .carousel-adventure-slide-image {
+  line-height: 0;
+}
+
+.carousel-adventure .carousel-adventure-slide .carousel-adventure-slide-image picture {
+  display: block;
+}
+
+.carousel-adventure .carousel-adventure-slide .carousel-adventure-slide-image img {
+  width: 100%;
+  height: clamp(320px, 56vw, 620px);
+  object-fit: cover;
+}
+
+/* Optional per-slide content (usually empty for adventure galleries) */
+.carousel-adventure .carousel-adventure-slide .carousel-adventure-slide-content:empty {
+  display: none;
+}
+
+/* Slide indicator dots */
+.carousel-adventure .carousel-adventure-slide-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding: 12px 0 0;
+  line-height: 0;
+}
+
+.carousel-adventure .carousel-adventure-slide-indicator button {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(175 175 175);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-adventure .carousel-adventure-slide-indicator button:disabled,
+.carousel-adventure .carousel-adventure-slide-indicator button:hover,
+.carousel-adventure .carousel-adventure-slide-indicator button:focus-visible {
+  background-color: rgb(0 0 0 / 80%);
+}
+
+/* Prev/next circular controls, overlaid at the vertical center */
+.carousel-adventure .carousel-adventure-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-adventure .carousel-adventure-navigation-buttons button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(19 19 19 / 25%);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.carousel-adventure .carousel-adventure-navigation-buttons button:hover,
+.carousel-adventure .carousel-adventure-navigation-buttons button:focus-visible {
+  background-color: rgb(19 19 19 / 75%);
+}
+
+.carousel-adventure .carousel-adventure-navigation-buttons button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-bottom: 0;
+  border-left: 0;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-adventure .carousel-adventure-navigation-buttons button.slide-next::after {
+  left: calc(50% - 2px);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@media (width >= 600px) {
+  .carousel-adventure .carousel-adventure-navigation-buttons {
+    left: 24px;
+    right: 24px;
+  }
+}

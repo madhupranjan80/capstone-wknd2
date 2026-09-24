@@ -1,0 +1,76 @@
+/* cards-image — borderless responsive grid of article/trip cards.
+   Visual values extracted from wknd.site/us/en .image-list.list computed styles.
+   Card: 13:10 image on top, uppercase dark title, uppercase grey description. */
+
+.cards-image > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px 14px;
+}
+
+.cards-image > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-image .cards-image-card-image {
+  line-height: 0;
+}
+
+.cards-image > ul > li img {
+  width: 100%;
+  aspect-ratio: 13 / 10;
+  object-fit: cover;
+}
+
+.cards-image .cards-image-card-body {
+  margin: 8px 0 0;
+}
+
+/* Title — Source Sans Pro (body font), 18px/27px, weight 600, uppercase, dark.
+   Overrides global h3 (Asar serif) and global blue link colour. */
+.cards-image .cards-image-card-body h3 {
+  margin: 0;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.cards-image .cards-image-card-body h3 a:any-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.cards-image .cards-image-card-body h3 a:hover {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+/* Description — Source Sans Pro, 14px/21px, uppercase, muted grey. */
+.cards-image .cards-image-card-body p {
+  margin: 16px 0 0;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--muted-color);
+}
+
+@media (width >= 600px) {
+  .cards-image > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-image > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

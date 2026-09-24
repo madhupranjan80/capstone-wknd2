@@ -1,0 +1,10 @@
+{
+  "variantName": "table-factsheet",
+  "baseBlock": "table",
+  "canonicalModel": "configuration",
+  "visualCharacteristics": "Borderless key/value fact sheet. Each row is a label/value pair separated by a thin horizontal divider; labels are uppercase in a muted grey, values are bold in the text color. No header row.",
+  "contentPattern": "Rows of two cells with no header row: cell 1 is the label (e.g. 'Activity'), cell 2 is the value (e.g. 'Surfing').",
+  "usage": "Adventure detail fact sheet listing activity, trip length, group size, difficulty, price, etc.",
+  "options": [],
+  "memberVariantIds": ["table-factsheet"]
+}

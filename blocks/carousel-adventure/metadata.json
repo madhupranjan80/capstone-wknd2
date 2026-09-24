@@ -1,0 +1,10 @@
+{
+  "variantName": "carousel-adventure",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": "Full-bleed, edge-to-edge image gallery for adventure detail pages. Each slide is an image only (no overlaid heading, description, or CTA). Slide indicator dots are centered below and circular prev/next controls overlay the vertical center of the slide area. A single-slide instance shows just the image with no controls.",
+  "contentPattern": "Repeating rows, each a slide: cell 1 is the image (mandatory), cell 2 is optional text (usually empty for adventure galleries).",
+  "usage": "Hero image gallery at the top of an adventure detail page.",
+  "options": [],
+  "memberVariantIds": ["carousel-adventure"]
+}

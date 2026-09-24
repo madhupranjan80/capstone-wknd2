@@ -1,0 +1,10 @@
+{
+  "type": "doc",
+  "sites": {
+    "capstone-wknd2": {
+      "previewOrg": "madhupranjan80",
+      "previewSite": "capstone-wknd2",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

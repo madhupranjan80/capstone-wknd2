@@ -1,9 +1,10 @@
 {
-  "type": "doc",
+  "type": "da",
   "sites": {
-    "capstone-wknd2": {
+    "capstone-wknd": {
       "previewOrg": "madhupranjan80",
       "previewSite": "capstone-wknd2",
+      "contentHostUrl": "https://content.da.live/madhupranjan80/capstone-wknd2/",
       "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
     }
   }
